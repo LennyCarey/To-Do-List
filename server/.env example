@@ -1,0 +1,5 @@
+PGUSER=postgres
+PGHOST=localhost
+PGDATABASE=todo_db
+PGPASSWORD=your_password
+PGPORT=5432

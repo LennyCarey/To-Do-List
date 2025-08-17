@@ -1,9 +1,8 @@
 # To-Do-List
-# 📝 To-Do List Web App
 
 A full-stack to-do list application built with **React**, **Node.js**, **Express**, and **PostgreSQL**. This project allows users to add and delete simple tasks from a database-backed list.
 
-## 🚀 Features
+## Features
 
 - Add new tasks
 - Delete existing tasks
@@ -13,7 +12,7 @@ A full-stack to-do list application built with **React**, **Node.js**, **Express
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Frontend     | Backend           | Database   |
 |--------------|-------------------|------------|
@@ -23,9 +22,9 @@ A full-stack to-do list application built with **React**, **Node.js**, **Express
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
-### 🔧 Prerequisites
+### Prerequisites
 
 - Node.js & npm
 - PostgreSQL installed and running
@@ -33,38 +32,52 @@ A full-stack to-do list application built with **React**, **Node.js**, **Express
 
 ---
 
-### 🖥️ Installation & Run
+### Installation & Run
 
 1. **Clone the repository**
 
 ```bash
 git clone https://github.com/LennyCarey/To-Do-List.git
 cd To-Do-List
-
+```
 2. **Set up the PostgreSQL database**
+
+```psql
 CREATE TABLE todos (
   id SERIAL PRIMARY KEY,
   task TEXT NOT NULL
 );
+```
 
 3. **Backend setup**
+
+```bash
 cd server
 cp .env.example .env   # Or manually create the .env file
 npm install
 node index.js          # Start the backend server on http://localhost:5000
+```
 
 4. **Frontend setup**
+
+```bash
 cd ../client
 npm install
 npm run dev            # Starts frontend on http://localhost:5173
+```
 
 5. **Visit the app**
 Go to http://localhost:5173
 
 ### **Environmental Variables**
 Inside server/.env
+
 PGUSER=your_postgres_username
+
 PGHOST=localhost
+
 PGDATABASE=todo_db
+
 PGPASSWORD=your_password
+
 PGPORT=5432
